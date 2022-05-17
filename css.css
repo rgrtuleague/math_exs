@@ -1,0 +1,30 @@
+html {
+    font-size: 30px;
+    font-family: 'Bangers', cursive;
+    background-color: mediumseagreen;
+}
+h1 {
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+}
+body {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: rgb(192, 163, 250);
+}
+p {
+    color: black;
+    background-color: rgb(220, 231, 67);
+    width: fit-content;
+}
+
+#idJohn {
+    color: blue;
+}
+#id_count_exs {
+    border: orange;
+}
