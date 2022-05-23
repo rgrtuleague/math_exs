@@ -44,7 +44,6 @@ function create_table(name, Qrows, Qcolumns) {
         let heading_4 = document.createElement('th');
         heading_4.innerHTML = "=";
         let heading_5 = document.createElement('th');
-        //heading_5.innerHTML = result;
         heading_5.insertAdjacentHTML("beforeEnd",'<input class="inputAns" maxlength="2">');
 
         row_1.appendChild(heading_1);
