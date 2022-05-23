@@ -28,3 +28,15 @@ p {
 #id_count_exs {
     border: orange;
 }
+
+table, .inputAns {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: 'Times New Roman', Times, serif;
+    width: 55px;
+    font-size: 35px;
+}
+th, td {
+    padding: 10px 20px;
+    border: 1px solid #000;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="sshmyrenkov">
+  <meta name="description" content="Задача этой странички - потренировать свои навыки в решении арифметических задач.">
+  <meta rel="shortcut icon" href="logo.png" type="image/x-icon">
+  <link href="css/css.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <title>Арифметические задачи</title>
+</head>
+<body>
+  <div id="main_block"> <!-- Весь контент будет в этом блоке -->
+    <div id="starting_info"> <!-- Блок приветствия и ввода информации -->
+      <h1>Павел, привет!</h1>
+      <p>Давай порешаем примеры!</p>
+      <p>Сколько примеров будем решать?</p>
+      <input id="count_common_exs" type="number" placeholder="20">
+      <button class="buttons" type="button" onclick="stor_count_exs()">OK</button>
+
+      <p id="question_right_answers" hidden>ОК, теперь введи количество правильных ответов:</p>
+      <input id="input_count_right_exs" type="number" placeholder="18" hidden>
+      <button  id="button_right_answers" class="buttons" type="button" onclick="stor_right_count_exs()" hidden>OK</button>
+
+      <p id="div_before_start" hidden>ok, поехали</p>
+    </div>
+  </div>
+  <script src="js/common_js.js"></script>
+
+</body>
+
+</html>
