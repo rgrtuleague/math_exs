@@ -52,7 +52,14 @@ function create_table(name, Qrows, Qcolumns) {
         row_1.appendChild(heading_4);
         row_1.appendChild(heading_5);
         thead.appendChild(row_1);
+
+        
     }
+
+    let buttonSubmit = document.createElement('button')
+        buttonSubmit.id = 'buttonSub'
+        buttonSubmit.innerHTML = "OK"
+        document.body.append(buttonSubmit)
 }
 
 function getEx() { // Функция формирует пример из расчета того, что результат 20 >= x >= 0
