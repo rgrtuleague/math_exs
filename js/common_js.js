@@ -4,6 +4,7 @@
 function stor_count_exs() {
  
   let count_exs = document.getElementById('count_common_exs').value // кол-во примеров
+  if (!Number(count_exs)) count_exs = 20
   
   localStorage.setItem('stor_count_exs', count_exs) // сохранили в localStorage
   // alert(count_exs)
