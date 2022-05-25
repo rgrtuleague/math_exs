@@ -17,14 +17,14 @@
       <h1>Павел, привет!</h1>
       <p>Давай порешаем примеры!</p>
       <p>Сколько примеров будем решать?</p>
-      <input id="count_common_exs" type="text" placeholder="10" maxlength="2">
+      <input id="count_common_exs" type="text" placeholder="20" maxlength="2" value="20">
       <button class="buttons" type="button" onclick="stor_count_exs()">OK</button>
 
-      <p id="question_right_answers" hidden>ОК, теперь введи количество правильных ответов:</p>
-      <input id="input_count_right_exs" type="number" placeholder="18" hidden>
+      <p id="question_right_answers" hidden>ОК, теперь введи число, до которого будут считаться примеры:</p>
+      <input id="input_maxResult" type="number" placeholder="20" value="20" hidden>
       <button  id="button_right_answers" class="buttons" type="button" onclick="stor_right_count_exs()" hidden>OK</button>
 
-      <p id="div_before_start" hidden>ok, поехали</p>
+      <p id="div_before_start" hidden>OK, поехали!</p>
     </div>
   </div>
   <script src="js/common_js.js"></script>
