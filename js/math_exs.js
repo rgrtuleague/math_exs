@@ -1,9 +1,9 @@
 
 let resultArray = []
 
-let xRight = localStorage.getItem("stor_right_count_exs")
+let maxRes = localStorage.getItem("stor_maxResult")
 let yExs = localStorage.getItem("stor_count_exs")
-document.getElementById("xFromYMessage").innerHTML = `Итак, минимум ${xRight} из ${yExs}`
+document.getElementById("xFromYMessage").innerHTML = `Итак, вот ${yExs} примеров, результат не более ${maxRes}`
 
 let rows = Number(localStorage.getItem("stor_count_exs"))
 
@@ -71,8 +71,8 @@ function create_table(name, Qrows, Qcolumns) {
 function getEx() { // Функция формирует пример из расчета того, что результат 20 >= x >= 0
 
     for (let i=0,j=0;i<1;i++) {
-        let x1 = Math.round(Math.random() * 20) // Первое число
-        let x2 = Math.round(Math.random() * 20) // Второе число
+        let x1 = Math.round(Math.random() * maxRes) // Первое число
+        let x2 = Math.round(Math.random() * maxRes) // Второе число
         let sign = Math.round(Math.random() * 10) < 5 ? "+" : "-" // Знак операции
 
         let result 
@@ -81,7 +81,7 @@ function getEx() { // Функция формирует пример из рас
         else
             result = Number(x1) - Number(x2)
 
-        if (result >= 0 && result <= 20) { // Проверка результата
+        if (result >= 0 && result <= maxRes) { // Проверка результата
             resultArray[i] = result
             j++
             return [x1.toString(), sign, x2.toString(), result]
